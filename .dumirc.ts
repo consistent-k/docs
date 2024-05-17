@@ -4,5 +4,8 @@ export default defineConfig({
   themeConfig: {
     name: '',
   },
-  publicPath: '/docs/'
+  publicPath: '/docs/',
+  history: {
+    type: 'hash'
+  }
 });
