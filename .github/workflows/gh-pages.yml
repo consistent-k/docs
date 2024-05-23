@@ -23,16 +23,25 @@ jobs:
         with:
           # 如果配置 themeConfig.lastUpdated 为 false，则不需要添加该参数以加快检出速度
           fetch-depth: 0
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 20
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Install dependencies
-        run: yarn
-      - name: Build with dumi
+
+      - name: Install pnpm (安装 pnpm)
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.15.6
+  
+      - name: Install dependencies (安装依赖)
+        run: pnpm install
+
+      - name: Build (构建)
         # 文档编译命令，如果是 react 模板需要修改为 npm run docs:build
-        run: yarn build
+        run: pnpm build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

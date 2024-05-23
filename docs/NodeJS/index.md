@@ -1,7 +1,7 @@
-# 安装NodeJS
+# NodeJS
 
 
-## 使用nvm管理工具安装
+## 安装
 
 ```bash
 # 安装nvm

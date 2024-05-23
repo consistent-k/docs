@@ -6,16 +6,14 @@ A static site base on [dumi](https://d.umijs.org).
 
 ```bash
 # install dependencies
-$ yarn install
+$ pnpm install
 
 # start dev server
-$ yarn start
+$ pnpm dev
 
 # build docs
 $ yarn run build
 
-# Locally preview the production build
-$ yarn run preview
 ```
 
 ## LICENSE

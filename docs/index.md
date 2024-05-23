@@ -1,23 +1,13 @@
 ---
-title: A static site based on dumi
+title: 一些文档
 hero:
-  title: Site
-  description: A static site based on dumi
+  title: Docs
+  description: 一些文档
   actions:
     - text: Hello
       link: /
     - text: World
       link: /
-features:
-  - title: Hello
-    emoji: 💎
-    description: Put hello description here
-  - title: World
-    emoji: 🌈
-    description: Put world description here
-  - title: '!'
-    emoji: 🚀
-    description: Put ! description here
 ---
 
 
