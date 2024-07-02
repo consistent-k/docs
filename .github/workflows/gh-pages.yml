@@ -33,7 +33,7 @@ jobs:
       - name: Install pnpm (安装 pnpm)
         uses: pnpm/action-setup@v2
         with:
-          version: 8.15.6
+          version: 9.1.4
   
       - name: Install dependencies (安装依赖)
         run: pnpm install
