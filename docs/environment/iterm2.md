@@ -1,53 +1,47 @@
-# iTem2
-
+---
+group:
+  title: 环境配置
+order: 1
+---
 
 ## 安装
-```bash
-# 官网下载
-https://iterm2.com/
-```
+
+官网下载：[iterm2](https://iterm2.com/)
+
 
 ## 美化改造
 
 ### 配置
 
-将iTem2设置为默认终端：（菜单栏）iTerm2 -> Make iTerm2 Default Term
+将iTerm2设置为默认终端：（菜单栏）iTerm2 -> Make iTerm2 Default Term
 
-![alt text](./image.png)
+![alt text](./images/iterm2-1.png)
 
 然后打开偏好设置preference，选中Keys，勾选Hotkey下的Show/hide iTerm2 with a system-wide hotkey，将热键设置为command+. ，这样你就可以通过command+. 全局热键来打开或关闭iTerm2窗口，非常方便。
 
-![alt text](./image-1.png)
-
+![alt text](./images/iterm2-2.png)
 
 
 ### 安装oh-my-zsh
 
-github连接：https://github.com/robbyrussell/oh-my-zsh
-
-使用 crul 安装：
-
-```bash
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-或使用wget：
+https://github.com/robbyrussell/oh-my-zsh
 
 
-```bash
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-```
+### 配色方案
+
+推荐采用 solarized [官网](https://ethanschoonover.com/solarized/) 下载后解压，打开 iTerm2 下的偏好设置 preference ，点开 profiles 下的colors 选项，点击右下角的 Color Presets 选项，选择import ，导入解压到的 solarized 文件下的Solarized Dark.itermcolors。
 
 
-### 主题
+### 修改主题
 
-安装成功后，用vim打开隐藏文件 .zshrc ，修改主题为 agnoster：
+用vim打开隐藏文件 .zshrc ，修改主题为 agnoster：
 
 ```bash
 ZSH_THEME="agnoster"
 ```
 
-应用这个主题需要特殊的字体支持，否则会出现乱码情况，这时我们来配置字体：
+
+### 配置字体
 
 1.使用 [Meslo](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf) 字体，点开连接点击 view raw 下载字体。
 
@@ -67,7 +61,7 @@ ZSH_THEME="agnoster"
 1.克隆仓库到本地 ~/.oh-my-zsh/custom/plugins 路径下
 
 ```bash
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 2.用 vim 打开 .zshrc 文件，找到插件设置命令，默认是 plugins=(git) ，我们把它修改为
@@ -76,12 +70,9 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 plugins=(zsh-autosuggestions git)
 ```
 
-
 3.重新打开终端窗口。
 
-PS：当你重新打开终端的时候可能看不到变化，可能你的字体颜色太淡了，我们把其改亮一些：
-
-移动到 ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions 路径下
+修改字体亮度 进入到 ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions 路径下
 
 ```bash
 cd ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions

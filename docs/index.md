@@ -4,10 +4,10 @@ hero:
   title: Docs
   description: 一些文档
   actions:
-    - text: Hello
+    - text: 介绍
       link: /
-    - text: World
-      link: /
+    - text: 环境配置
+      link: /environment/homebrew
 ---
 
 
