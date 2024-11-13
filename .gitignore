@@ -1,5 +1,5 @@
 node_modules
 /dist
-.dumi/tmp
-.dumi/tmp-production
+/docs/.vitepress/cache
+/docs/.vitepress/dist
 .DS_Store

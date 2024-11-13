@@ -1,13 +1,14 @@
 ---
-title: 一些文档
-hero:
-  title: Docs
-  description: 一些文档
-  actions:
-    - text: 介绍
-      link: /
-    - text: 环境配置
-      link: /environment/homebrew
----
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
 
+hero:
+  name: ""
+  text: "随手记的一些文档"
+  tagline: 
+  actions:
+    - theme: brand
+      text: 开始阅读
+      link: /guide/start
+---
 

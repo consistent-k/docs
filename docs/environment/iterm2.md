@@ -15,11 +15,11 @@ order: 1
 
 将iTerm2设置为默认终端：（菜单栏）iTerm2 -> Make iTerm2 Default Term
 
-![alt text](./images/iterm2-1.png)
+![alt text](../assets/images/iterm2-1.png)
 
 然后打开偏好设置preference，选中Keys，勾选Hotkey下的Show/hide iTerm2 with a system-wide hotkey，将热键设置为command+. ，这样你就可以通过command+. 全局热键来打开或关闭iTerm2窗口，非常方便。
 
-![alt text](./images/iterm2-2.png)
+![alt text](../assets/images/iterm2-2.png)
 
 
 ### 安装oh-my-zsh
