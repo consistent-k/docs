@@ -3,6 +3,7 @@ import { DefaultTheme, defineConfig } from 'vitepress'
 export default defineConfig({
     title: "consistent的文档",
     description: "一些文档",
+    base: '/docs/',
     themeConfig: {
         nav: [
             { text: '简介', link: '/guide/start' },
