@@ -1,12 +1,9 @@
----
-group:
-  title: 环境配置
-order: 1
----
+# iTerm2
+> iTerm2 是一个开源的终端模拟器，用于macOS和Linux操作系统。它是iTerm的继承者，iTerm是一个早期的终端模拟器。iTerm2 提供了许多增强功能，包括：
 
 ## 安装
 
-官网下载：[iterm2](https://iterm2.com/)
+官网下载：[iTerm2](https://iterm2.com/)
 
 
 ## 美化改造
