@@ -10,5 +10,8 @@ hero:
     - theme: brand
       text: 开始阅读
       link: /guide/start
+    - theme: alt
+      text: GitHub
+      link: https://github.com/consistent-k/docs
 ---
 
