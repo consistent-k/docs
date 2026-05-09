@@ -7,7 +7,8 @@ export default defineConfig({
     themeConfig: {
         nav: [
             { text: '简介', link: '/guide/start' },
-            { text: '环境配置', link: '/environment/homebrew' }
+            { text: '环境配置', link: '/environment/homebrew' },
+            { text: 'AI', link: '/ai/start' }
         ],
 
         sidebar: {

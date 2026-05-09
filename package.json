@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "consistent_k_docs",
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -11,6 +11,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "vitepress": "^1.5.0"
-  }
+    "vitepress": "^1.6.4"
+  },
+  "packageManager": "pnpm@10.33.2"
 }
